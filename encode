@@ -102,10 +102,26 @@ void readfilename(void){//i代表搜索第几行
 				//printf("%s\n",path);
 				
 			}
+		if((buf[len-2]!='l'||buf[len-3]!='l'||buf[len-2]!='d'||buf[len-2]!='.')
+			//&&(buf[len-2]!='p'||buf[len-3]!='m'||buf[len-4]!='b'||buf[len-5]!='.')
+			//&&(buf[len-2]!='f'||buf[len-3]!='d'||buf[len-4]!='p'||buf[len-5]!='.')
+			//&&(buf[len-2]!='4'||buf[len-3]!='p'||buf[len-4]!='m'||buf[len-5]!='.')
+			//&&(buf[len-2]!='r'||buf[len-3]!='a'||buf[len-4]!='r'||buf[len-5]!='.')
+			//&&(buf[len-2]!='f'||buf[len-3]!='i'||buf[len-4]!='g'||buf[len-5]!='.')
+			//&&(buf[len-2]!='f'||buf[len-3]!='i'||buf[len-4]!='g'||buf[len-5]!='.')
+			//&&(buf[len-2]!='s'||buf[len-3]!='l'||buf[len-4]!='x'||buf[len-5]!='.')
+			//&&(buf[len-2]!='x'||buf[len-3]!='s'||buf[len-4]!='l'||buf[len-5]!='x'||buf[len-6]!='.')
+			&&(buf[len-2]!='t'||buf[len-3]!='p'||buf[len-4]!='p'||buf[len-5]!='.')){
 		if(buf[0]=='2'&&buf[1]=='0'&&buf[4]=='/'&&buf[21]!='<'&&buf[36]!=36){
 			
 			
-			if(buf[36] != 'f'||buf[37]!='i'||buf[40]!='n'||buf[43]!='e'||buf[44]!='l'){//打包制作前去掉这行if判断重新编译
+			if((buf[36] != 'f'||buf[37]!='i'||buf[38]!='l'||buf[39]!='e'||buf[40]!='n'||buf[41]!='a'||buf[42]!='m'||buf[43]!='e'||buf[44]!='l')//打包制作前去掉这行if判断重新编译
+				&&(buf[36]!='c'||buf[37]!='o'||buf[38]!='p'||buf[39]!='y')
+				&&(buf[36]!='e'||buf[37]!='n'||buf[38]!='c'||buf[39]!='o'||buf[40]!='d'||buf[41]!='e')
+				&&(buf[36]!='s'||buf[37]!='e'||buf[38]!='a'||buf[39]!='r'||buf[40]!='c'||buf[41]!='h')
+				&&(buf[36]!='s'||buf[37]!='h'||buf[38]!='e'||buf[39]!='l'||buf[40]!='l'||buf[41]!='e'||buf[42]!='x'||buf[43]!='e'||buf[44]!='c'||buf[45]!='u'||buf[46]!='t'||buf[47]!='e')
+				&&(buf[36]!='s'||buf[37]!='t'||buf[38]!='a'||buf[39]!='r'||buf[40]!='t'||buf[41]!='e'||buf[42]!='n'||buf[43]!='c'||buf[44]!='o'||buf[45]!='d'||buf[46]!='e')
+				&&(buf[36]!='s'||buf[37]!='t'||buf[38]!='a'||buf[39]!='r'||buf[40]!='t'||buf[41]!='e'||buf[42]!='x'||buf[43]!='e'||buf[44]!='c'||buf[45]!='u'||buf[46]!='t'||buf[47]!='e')){
 				
 				//howlong = strlen(path);
 				//path[howlong] = '\\';
@@ -119,6 +135,7 @@ void readfilename(void){//i代表搜索第几行
 			}
 			
 		}
+	}
 		//Sleep(50);
 		
 	}
@@ -132,3 +149,4 @@ int main(int argc,char *argv[])
 	//system("pause");
 	return 0;
 }
+
