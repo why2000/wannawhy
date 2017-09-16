@@ -1,0 +1,1 @@
+DIR *.* /s > filenamelist.txt
